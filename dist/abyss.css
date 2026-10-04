@@ -1,0 +1,39 @@
+.abyss-intro{height:850svh;position:relative;background:#000}
+/* Temporary comparison mode: preserve the hero source, bypass its scene. */
+.skip-surface #surface.hero{display:none!important}
+.skip-surface .abyss-intro{height:600svh}
+.skip-surface .descent-world{height:360svh}
+@media(max-width:600px){.skip-surface .abyss-intro{height:560svh}.skip-surface .descent-world{height:320svh}}
+@media(prefers-reduced-motion:reduce){.skip-surface .abyss-intro{height:260svh}.skip-surface .descent-world{height:auto}}
+#surface.hero{margin-top:-100svh;z-index:2;opacity:var(--landing-reveal,0);transform:translateY(var(--landing-offset,0px)) scale(var(--landing-scale,1));transform-origin:50% 50svh}
+#surface .hero-topline,#surface h1,#surface .hero-bottom,#surface .annotation,#surface .holo-controls,#surface .magic-beacon{opacity:0;visibility:hidden;transition:none}
+#surface.is-arrived .hero-topline,#surface.is-arrived h1,#surface.is-arrived .hero-bottom,#surface.is-arrived .annotation,#surface.is-arrived .holo-controls,#surface.is-arrived .magic-beacon{opacity:var(--text-reveal,0);visibility:visible}
+#surface.is-arrived .hero-topline{transition-delay:.12s}
+#surface.is-arrived .hero-bottom,#surface.is-arrived .annotation,#surface.is-arrived .holo-controls,#surface.is-arrived .magic-beacon{transition-delay:.25s}
+/* A soft outline-to-image dissolve, matching the first mask's eased fade. */
+#surface.is-materializing .holo-piece image{opacity:var(--materialize,0)}
+#surface.is-materializing .holo-wire{opacity:calc((1 - var(--materialize,0))*.65);stroke-width:.8;transition:none}
+#surface.is-materializing .holo-mesh,#surface.is-materializing .holo-projection{opacity:calc((1 - var(--materialize,0))*.3);transition:none}
+#surface.is-materializing .holo-float-layer{animation-play-state:paused}
+#surface:before{content:'';position:absolute;inset:12% 5%;background:radial-gradient(ellipse at 60% 55%,#77ffdd12,transparent 65%);opacity:0;pointer-events:none}
+#surface.is-materializing:before{opacity:calc(1 - var(--materialize,0))}
+.abyss-mask-position,.abyss-mouse,.abyss-cue,.abyss-index,.abyss-light{opacity:calc(var(--reveal,1)*(1 - var(--arrival,0)))}
+.abyss-stage{position:sticky;top:0;height:100svh;min-height:540px;overflow:hidden;isolation:isolate;background:#000;color:#bdd3cd;--reveal:0;--arrival:0;--mask-scale:.8}
+.abyss-light{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 48%,#143935 0,transparent 63%);opacity:calc(var(--reveal)*.5);pointer-events:none}
+.abyss-coordinate{position:absolute;top:12%;left:50%;transform:translateX(-50%);font-size:7px;letter-spacing:.22em;color:#50605b;white-space:nowrap;opacity:calc(1 - var(--arrival))}
+.abyss-mask-position{position:absolute;inset:9% 0 12%;opacity:var(--reveal);transform:translateY(var(--rise,50px)) scale(var(--mask-scale));will-change:transform,opacity;pointer-events:none}
+.abyss-mask-follow{position:absolute;inset:0;transform-origin:50% 50%;will-change:transform}
+.abyss-mask-follow model-viewer{display:block;width:100%;height:100%;--poster-color:transparent;pointer-events:none}
+.abyss-whisper{position:absolute;left:0;right:0;top:43%;text-align:center;opacity:var(--whisper,1);pointer-events:none}.abyss-whisper>.micro{font-size:7px;letter-spacing:.25em;color:#557169}.abyss-whisper p{font-size:clamp(22px,3.2vw,42px);letter-spacing:-.045em;font-weight:400;margin-top:20px;color:#a1b5ad}
+.abyss-mouse{position:absolute;bottom:22%;left:0;right:0;text-align:center;font-size:7px;letter-spacing:.2em;color:#6eaaa0;opacity:var(--reveal)}
+.abyss-cue{position:absolute;bottom:9%;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:14px;font-size:7px;letter-spacing:.18em;color:#78958a;white-space:nowrap}.abyss-cue-line{height:35px;width:1px;background:linear-gradient(transparent,#8bd4b888)}.abyss-cue b{font-size:17px;font-weight:400}.abyss-index{position:absolute;bottom:9%;left:6%;font-size:6px;letter-spacing:.12em;color:#34443d}
+.abyss-active .header,.abyss-active .ambient,.abyss-active .magic-atmosphere,.abyss-active .magic-cockpit,.abyss-active .magic-toolbar,.abyss-active .magic-status,.abyss-active .depth-rail,.abyss-active .sound{opacity:0!important;visibility:hidden!important;pointer-events:none!important}
+.header,.ambient,.magic-atmosphere,.magic-cockpit,.magic-toolbar,.depth-rail,.sound{transition:opacity .65s,visibility .65s}
+@media(max-width:600px){.abyss-intro{height:230svh}.abyss-stage{min-height:520px}.abyss-mask-position{inset:20% -20% 21%}.abyss-mouse{font-size:0}.abyss-mouse:after{content:'KEEP SCROLLING · GO BEYOND';font:6px var(--mono);letter-spacing:.16em}.abyss-coordinate{font-size:6px}.abyss-index{display:none}.abyss-whisper p{font-size:29px}.abyss-whisper>.micro{font-size:6px}}
+/* Dissolve the departing mask as the hologram forms. */
+.abyss-mask-position{opacity:calc(var(--reveal)*(1 - var(--arrival)))}
+.abyss-mouse{opacity:calc(var(--reveal)*(1 - var(--arrival)))}
+.abyss-coordinate,.abyss-mouse,.abyss-cue,.abyss-index{opacity:calc(1 - var(--approach,0)*2)}
+.abyss-mouse{opacity:calc(var(--reveal)*(1 - var(--approach,0)*2))}
+@media(max-width:600px){.abyss-intro{height:800svh}}
+@media(prefers-reduced-motion:reduce){.abyss-intro{height:260svh}.abyss-mask-position{transform:none!important}.abyss-mask-follow{transform:none!important}.header,.ambient,.magic-atmosphere,.magic-cockpit,.magic-toolbar,.depth-rail,.sound{transition:none}}

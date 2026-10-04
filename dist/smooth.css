@@ -1,0 +1,18 @@
+/* Keep moving product layers on the compositor: full-size SVG filters caused
+   the 4K source render to be re-rasterized for every floating frame. */
+.hero-art .mask-hologram,.holo-float,.holo-piece.is-active,.holo-projection.is-active{filter:none}
+.holo-float{animation:none;will-change:auto}
+.holo-float-layer{position:absolute;inset:0;transform-origin:70% 55%;animation:mask-levitate 7s ease-in-out infinite;will-change:transform;pointer-events:none}
+.levitation-paused .holo-float-layer{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.holo-float-layer{animation:none}}
+.holo-tilt{backface-visibility:hidden}
+.magic-orbits{contain:layout style}
+.magic-reticle{will-change:transform}
+.light-rays{filter:none;opacity:.65}
+.levitation-aura{filter:none;background:radial-gradient(ellipse at 62% 45%,#93ffd614,transparent 53%)}
+.levitation-aura:after{filter:none;background:radial-gradient(ellipse,#0004,transparent 68%)}
+.magic-caustics{filter:none;opacity:.3;will-change:transform}
+.world-object model-viewer{filter:none}
+.magic-toolbar,.holo-component-controls{backdrop-filter:none;background:#061b19f5}
+.offscreen-effects .holo-orbit,.offscreen-effects .radar-sweep,.offscreen-effects .beacon-orb i{animation-play-state:paused}
+@media(max-width:600px){.magic-orbits .orbit-c,.magic-orbits .orbit-d{display:none}.magic-caustics{animation:none}.magic-discovery,.world-detail{backdrop-filter:none}}

@@ -1,0 +1,9 @@
+.opening-cipher{position:absolute;inset:0;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#000;color:#e5f6f5;pointer-events:none;opacity:1;visibility:visible;transition:opacity .65s ease,visibility .65s;isolation:isolate}
+.opening-cipher.is-dismissed{opacity:0;visibility:hidden}
+.cipher-eyebrow{font:8px var(--mono);letter-spacing:.3em;color:#7d999f;margin:0 0 28px;text-align:center}
+.cipher-word{font:400 clamp(46px,9vw,130px)/1.1 var(--mono);letter-spacing:.15em;padding-left:.15em;color:var(--accent,#c2f4aa);text-shadow:0 0 32px #c2f4aa26;text-align:center}
+.cipher-word span{display:block;white-space:nowrap}
+.cipher-invitation{position:static;margin:32px 0 0;text-align:center;font:8px var(--mono);letter-spacing:.18em;color:#8ca7ab}
+.cipher-invitation span{display:block;text-align:center;font-size:18px;margin-top:18px}
+@media(max-width:600px){.cipher-eyebrow{font-size:6px;letter-spacing:.2em}.cipher-word{font-size:13vw}.cipher-invitation{font-size:7px}}
+@media(prefers-reduced-motion:reduce){.opening-cipher{transition:none}}

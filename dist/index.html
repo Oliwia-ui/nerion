@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" class="abyss-active skip-surface film-journey"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#071618"><meta name="description" content="Nerion. A new perspective beneath the surface. Explore the intelligent dive mask concept."><title>NERION — Beyond the surface</title>
+<link rel="stylesheet" href="nerion.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"><script type="module" src="https://unpkg.com/@google/model-viewer@4.0.0/dist/model-viewer.min.js"></script>
+<link rel="stylesheet" href="hologram.css">
+<link rel="stylesheet" href="abyss.css?v=longer-descent-1">
+</head><body>
+<a class="skip" href="#system">Skip to content</a>
+<header class="header"><a class="logo" href="#surface" aria-label="Nerion home">nerion<span>®</span></a><span class="header-caption">INTELLIGENCE BELOW THE SURFACE</span><button class="menu-toggle" aria-expanded="false" aria-controls="menu">Explore <span class="menu-icon">＋</span></button></header>
+<nav id="menu" class="menu" aria-label="Main navigation" inert><span class="micro">YOUR NEXT DESCENT</span><a href="#surface"><small>00</small> The surface</a><a href="#vision"><small>01</small> The vision</a><a href="#system"><small>02</small> The system</a><a href="#depth"><small>03</small> The deep</a><p>A different way to see the ocean.</p></nav>
+<div class="ambient" aria-hidden="true"><div class="light-rays"></div><canvas id="particles"></canvas><div class="vignette"></div></div>
+<aside class="depth-rail" aria-label="Scroll depth"><span>SURFACE</span><div class="rail-track"><i></i></div><span><b id="depth-value">00.0</b> M</span></aside>
+<main>
+<section id="abyss" class="abyss-intro" aria-label="Enter the abyss">
+  <div class="abyss-stage">
+    <div class="abyss-light" aria-hidden="true"></div>
+    <p class="abyss-coordinate micro">NERION / THE DESCENT BEGINS</p>
+    <video class="opening-video" muted playsinline preload="none" poster="assets/nerion-opening-poster.jpg" data-src="assets/nerion-opening.mp4" aria-label="Nerion mask descending into dark water"></video>
+    <div class="opening-shade" aria-hidden="true"></div>
+    <div class="opening-copy"><p class="micro">A DIFFERENT WAY TO SEE.</p><h1 aria-label="Beyond the surface."><span class="opening-word" aria-hidden="true">Beyond the</span><span class="opening-word" aria-hidden="true">surface.</span></h1></div>
+    <p class="opening-hint micro">FROM THE UNKNOWN. INTO COLOR.</p>
+    <a class="abyss-cue micro" href="#surface"><span class="abyss-cue-line"></span><span>SCROLL INTO THE ABYSS</span><b>↓</b></a>
+    <span class="abyss-index micro" aria-hidden="true">00 / THE UNKNOWN</span>
+  </div>
+</section>
+<section id="surface" class="hero"><div class="hero-topline micro"><span><i class="status"></i> NERION / EXPLORATION SYSTEM</span><span>EST. 2026 &nbsp; · &nbsp; EARTH, OCEAN</span></div><h1>Beyond the<br><span>surface.</span></h1><div class="hero-art"><img src="assets/mask.png" alt="Nerion intelligent dive mask, with a luminous green display inside the visor" fetchpriority="high"></div><div class="annotation micro"><span class="cross">＋</span><span>N—01<br><em>INTELLIGENT DIVE MASK</em></span><i></i></div><div class="hero-bottom"><a class="descend micro" href="#vision"><span class="circle-arrow">↓</span><span>SCROLL TO DESCEND<br><em>THERE IS MORE BELOW.</em></span></a><p>A quieter mind.<br>A deeper connection.</p><span class="micro hero-index">[ 00 — 03 ]</span></div></section>
+<section id="legacy-vision" class="descent-world" aria-label="A cinematic descent into Nerion">
+  <div class="world-viewport">
+    <img class="world-ocean" src="assets/ocean.png" alt="" loading="lazy">
+    <div class="world-fog" aria-hidden="true"></div>
+    <div class="world-top micro"><span>01 / ENTER THE UNKNOWN</span><span>N—01 &nbsp; · &nbsp; FIELD STUDY</span></div>
+    <h2 class="world-title">Go<br><span>deeper.</span></h2>
+    <div class="world-object"><model-viewer id="descent-model" src="assets/mask.glb" poster="assets/mask.png" alt="Nerion dive mask slowly rotating as you descend" camera-orbit="180deg 80deg 105%" field-of-view="30deg" exposure="1.8" shadow-intensity="0" interaction-prompt="none" loading="eager"></model-viewer></div>
+    <svg class="world-guides" viewBox="0 0 1000 700" preserveAspectRatio="none" aria-hidden="true"><path d="M225 295L370 350 600 310 780 225M370 350L440 500 680 470 780 225"/><circle cx="370" cy="350" r="4"/><circle cx="600" cy="310" r="4"/><circle cx="440" cy="500" r="4"/><path d="M365 350h10m-5-5v10M595 310h10m-5-5v10"/></svg>
+    <button class="world-node world-node-a micro" data-world-detail="optic" aria-expanded="false" aria-controls="world-detail"><span>＋</span> 01 / SEE CLEARLY</button>
+    <button class="world-node world-node-b micro" data-world-detail="presence" aria-expanded="false" aria-controls="world-detail"><span>＋</span> 02 / STAY PRESENT</button>
+    <div class="world-detail" id="world-detail" hidden><button class="world-close" aria-label="Close component detail">×</button><span class="micro" id="world-detail-label"></span><h3></h3><p></p></div>
+    <div class="world-story"><p class="micro">LESS DISTRACTION. MORE DISCOVERY.</p><p class="world-line">The ocean has more to say.<br><span>Be there for it.</span></p></div>
+    <div class="world-bottom micro"><span>SCROLL TO EXPLORE <i>↓</i></span><span class="world-measure">DEPTH <b id="world-depth">05.0</b> M</span><a href="#system">EXPLORE THE SYSTEM ↗</a></div>
+    <div class="world-progress" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+<section id="legacy-drift" class="drift-film" aria-label="Nerion underwater concept film">
+  <div class="drift-viewport">
+    <video class="drift-video" muted playsinline preload="none" poster="assets/diver-poster.jpg" aria-label="A diver wearing the Nerion concept mask swimming through dark teal water" data-src="assets/nerion-diver.mp4"></video>
+    <div class="drift-shade" aria-hidden="true"></div>
+    <div class="drift-top micro"><span>N—01 / INTO THE BLUE</span><span>SEEDANCE · AI CONCEPT FILM</span></div>
+    <div class="drift-copy"><p class="micro">LESS BETWEEN YOU AND THE UNKNOWN</p><h2>Find your<br><span>own current.</span></h2></div>
+    <div class="drift-bottom micro"><span class="drift-status">SCROLL TO MOVE THROUGH THE WATER ↓</span><a href="#system">EXPLORE THE SYSTEM ↗</a></div>
+    <div class="drift-track" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+<section id="system" class="system section"><div class="section-heading micro"><span>02 / THE SYSTEM</span><span>COMPLEX THINKING. SIMPLE FEELING.</span></div><div class="system-title"><h2>Quietly<br><span>extraordinary.</span></h2><p class="body-copy">One connected perspective.<br>Every detail, considered.</p></div><div class="model-stage"><div class="orbital" aria-hidden="true"></div><model-viewer id="mask-model" src="assets/mask.glb" poster="assets/mask.png" alt="Interactive 3D model of the Nerion mask. Drag to rotate." camera-controls auto-rotate rotation-per-second="12deg" shadow-intensity="0" exposure="1.5" interaction-prompt="none" camera-orbit="25deg 80deg auto" touch-action="pan-y"></model-viewer><span class="model-hint micro">↔ &nbsp; DRAG TO EXPLORE</span><span class="model-code micro">N—01<br>PRODUCT CONCEPT</span></div><div class="feature-tabs" role="tablist" aria-label="Mask features"><button id="tab-optic" role="tab" aria-selected="true" aria-controls="feature-detail" data-feature="optic"><small>01</small> Adaptive optic <span>↗</span></button><button id="tab-array" role="tab" aria-selected="false" aria-controls="feature-detail" tabindex="-1" data-feature="array"><small>02</small> Environmental array <span>↗</span></button><button id="tab-hud" role="tab" aria-selected="false" aria-controls="feature-detail" tabindex="-1" data-feature="hud"><small>03</small> In-view intelligence <span>↗</span></button></div><div id="feature-detail" class="feature-detail" role="tabpanel" aria-labelledby="tab-optic" tabindex="0"><span class="micro">CLARITY, BY DESIGN</span><p>A wide, uninterrupted view. An adaptive lens concept designed to make the unfamiliar feel a little more familiar.</p></div></section>
+<section id="depth" class="deep section"><img src="assets/diver.png" alt="Diver exploring the ocean wearing the Nerion mask" loading="lazy"><div class="deep-shade"></div><div class="section-heading micro"><span>03 / THE DEEP</span><span>YOU. FULLY PRESENT.</span></div><div class="deep-copy"><p class="micro"><i class="status"></i> THE DESCENT PROTOCOL</p><h2>Less between<br>you and<br><span>the blue.</span></h2><p class="body-copy">Depth. Direction. A sense of place.<br>The information you need, quietly in view.</p></div><div class="telemetry micro" aria-label="Illustrative dive interface"><div><span>DEPTH</span><b>24.8<small> M</small></b></div><div><span>HEADING</span><b>142<small> ° SE</small></b></div><div><span>WATER</span><b>18.4<small> °C</small></b></div><span class="simulation">INTERFACE CONCEPT / SIMULATED DATA</span></div></section>
+<footer><p class="micro">A NEW PERSPECTIVE IS COMING.</p><h2>Stay curious.<br><span>Go deeper.</span></h2><a class="return micro" href="#surface">RETURN TO THE SURFACE <span>↑</span></a><div class="footer-bottom micro"><a class="logo" href="#surface">nerion<span>®</span></a><span>DESIGNED FOR THE UNDISCOVERED.</span><span>© NERION 2026 · PRODUCT CONCEPT</span></div></footer>
+</main><button id="sound" class="sound micro" aria-pressed="false" aria-label="Enable ambient ocean sound"><span class="sound-bars"><i></i><i></i><i></i><i></i></span> SOUND <span id="sound-state">OFF</span></button><script src="nerion.js?v=abyss-1"></script>
+<script src="hologram.js?v=skip-surface-1"></script>
+<link rel="stylesheet" href="cinematic.css"><script src="cinematic.js?v=film-journey-1"></script>
+<link rel="stylesheet" href="magic.css"><script src="magic.js?v=abyss-1"></script>
+<script src="performance-check.js"></script>
+<link rel="stylesheet" href="smooth.css?v=2">
+<script src="abyss.js?v=opening-film-1"></script>
+<link rel="stylesheet" href="opening.css?v=1"><script src="opening.js?v=journey-1"></script>
+<link rel="stylesheet" href="drift.css?v=1"><script src="drift.js?v=journey-1"></script>
+<link rel="stylesheet" href="journey.css?v=1"><script src="journey-timeline.js?v=2"></script><script src="journey.js?v=3"></script>
+<link rel="stylesheet" href="system-scroll.css?v=2"><script src="system-scroll.js?v=2"></script>
+<link rel="stylesheet" href="product-world.css?v=4"><script src="product-world.js?v=4"></script><script src="scroll-loop.js?v=1"></script>
+<link rel="stylesheet" href="visor-view.css?v=1"><script src="visor-view.js?v=1"></script>
+<link rel="stylesheet" href="opening-cipher.css?v=1"><script src="opening-cipher.js?v=1"></script>
+<link rel="stylesheet" href="deep-product.css?v=1"><script src="deep-product.js?v=1"></script>
+</body></html>

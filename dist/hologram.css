@@ -1,0 +1,35 @@
+.hero-art .holo-original{visibility:hidden}
+.holo-float{transform-box:view-box;transform-origin:70% 55%;animation:mask-levitate 7s ease-in-out infinite;filter:drop-shadow(0 30px 20px #0005)}
+.holo-tilt{transform-box:view-box;transform-origin:70% 55%;will-change:transform}
+.holo-assembly{transform-style:preserve-3d}
+.levitation-aura{position:absolute;inset:8% 0 0 25%;pointer-events:none;background:radial-gradient(ellipse at var(--light-x,58%) var(--light-y,45%),#93ffd61c,transparent 48%);filter:blur(25px);animation:aura-breathe 7s ease-in-out infinite}
+.levitation-aura:after{content:'';position:absolute;left:35%;right:9%;bottom:14%;height:6%;border-radius:50%;background:#0006;filter:blur(14px);animation:levitation-shadow 7s ease-in-out infinite}
+@keyframes mask-levitate{0%,100%{transform:translate(0,5px) rotate(-1deg)}50%{transform:translate(0,-12px) rotate(1deg)}}
+@keyframes aura-breathe{0%,100%{opacity:.65}50%{opacity:1}}
+@keyframes levitation-shadow{0%,100%{transform:scale(1);opacity:.65}50%{transform:scale(.8);opacity:.35}}
+.levitation-paused .holo-float,.levitation-paused .levitation-aura,.levitation-paused .levitation-aura:after{animation-play-state:paused}
+.hero-art .mask-hologram{position:absolute;width:100%;height:100%;overflow:visible;transform:translate(-2%,6%) scale(1.05);pointer-events:none;filter:drop-shadow(0 20px 30px #0004)}
+.holo-piece{transition:transform .8s cubic-bezier(.2,.7,.15,1),filter .6s;transform-box:view-box;transform-origin:70% 55%}
+.holo-hit{pointer-events:all;cursor:crosshair}
+.holo-wire,.holo-label,.holo-projection{fill:none;stroke:#a6ffda;stroke-width:.7;vector-effect:non-scaling-stroke;opacity:0;transition:opacity .4s}
+.holo-label text,.holo-projection text{fill:#c0ffe2;stroke:none;font:7px 'DM Mono',monospace;letter-spacing:.8px}
+.holo-label path{stroke-width:.65}.holo-label circle{fill:#c0ffe2;stroke:none}
+.holo-glass,.holo-mesh{opacity:0;transition:opacity .4s}
+.holo-ghost{fill:none;stroke:#a6ffda;stroke-dasharray:3 5;stroke-width:.55}.holo-ghost path{opacity:0;transition:opacity .4s}.holo-ghost path.is-active{opacity:.45}
+.holo-projection{transform:translate(0,0);transition:transform .8s cubic-bezier(.2,.7,.15,1),opacity .4s;fill:#75ffc909}.holo-projection text{font-size:6px}.holo-projection circle{stroke-dasharray:2 3}
+.holo-lens.is-active{transform:translate(-80px,-25px) rotate(-6deg);filter:drop-shadow(0 0 12px #86ffd540)}
+.holo-lower.is-active{transform:translate(-20px,45px) rotate(5deg)}
+.holo-strap.is-active{transform:translate(30px,-25px) rotate(4deg)}
+.holo-sensor.is-active{transform:translate(42px,16px) rotate(6deg);filter:drop-shadow(0 0 8px #a6ffda55)}
+.holo-shell.is-active{transform:translate(-15px,-32px);filter:drop-shadow(0 0 8px #a6ffda40)}
+.holo-piece.is-active .holo-wire{opacity:.8}.holo-piece.is-active .holo-label{opacity:1}.holo-piece.is-active .holo-glass{opacity:1}.holo-piece.is-active .holo-mesh{opacity:.65}
+.holo-projection.is-active{opacity:.8;transform:translate(-130px,15px) rotate(-6deg);filter:drop-shadow(0 0 9px #77ffd377)}
+.hero h1{transition:opacity .6s}.hologram-open h1{opacity:.35}
+.holo-controls{position:absolute;right:8%;bottom:155px;z-index:5;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.holo-component-controls{display:flex;flex-wrap:wrap;border:1px solid #acdfc544;background:#071d1bd9;backdrop-filter:blur(12px)}
+.holo-component{padding:12px 10px;font-size:8px;color:#9fbcaf;transition:color .2s,background .2s}
+.holo-component:hover,.holo-component[aria-pressed=true]{color:#c8ffe1;background:#25584288}.holo-component[aria-pressed=true]{box-shadow:inset 0 -1px #a6ffda}
+.holo-instruction{font-size:7px;color:#7daca0}.hologram-open .annotation{opacity:.6}.annotation{transition:opacity .4s}.hologram-open .hero-art{z-index:3}.hero{isolation:isolate}
+@media(min-width:601px) and (max-width:900px){.hero-art .mask-hologram{transform:translate(-6%,7%) scale(1.1)}.holo-controls{right:8%;bottom:132px}.holo-lens.is-active{transform:translate(-55px,-25px) rotate(-5deg)}.holo-projection.is-active{transform:translate(-90px,10px) rotate(-5deg)}}
+@media(max-width:600px){.hero-art .mask-hologram{transform:scale(1.1)}.holo-controls{right:8%;bottom:126px;gap:7px}.holo-component{padding:10px 8px;font-size:7px}.holo-instruction{font-size:0}.holo-instruction:after{content:'TAP A PIECE TO EXPLORE';font:7px var(--mono)}.holo-lens.is-active{transform:translate(-40px,-20px) rotate(-5deg)}.holo-lower.is-active{transform:translate(-10px,30px) rotate(4deg)}.holo-strap.is-active{transform:translate(15px,-20px) rotate(3deg)}.holo-sensor.is-active{transform:translate(25px,10px)}.holo-projection.is-active{transform:translate(-65px,0) rotate(-5deg)}.holo-label{display:none}.annotation{top:78%;font-size:6px}.annotation em{font-size:6px}}
+@media(prefers-reduced-motion:reduce){.holo-piece,.holo-projection,.hero h1,.holo-wire,.holo-label,.holo-ghost path,.holo-glass,.holo-mesh{transition:none}.holo-float,.levitation-aura,.levitation-aura:after{animation:none}.holo-tilt{transform:none!important}}

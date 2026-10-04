@@ -1,0 +1,26 @@
+#system{padding-top:0}
+.system-scroll-track{position:relative;height:340svh}
+.system-scroll-stage{position:sticky;top:min(0px,calc(100svh - 580px));height:100svh;min-height:580px;padding-top:110px;display:flex;flex-direction:column;isolation:isolate}
+.system-scroll-stage .system-title{margin-top:clamp(24px,4svh,55px);flex-shrink:0}
+.system-scroll-stage .system-title h2{font-size:clamp(40px,5.8vw,85px)}
+.system-scroll-stage .model-stage{height:auto;min-height:0;flex:1;margin-bottom:65px}
+.system-scroll-stage .model-stage model-viewer{height:100%}
+.system-scroll-stage .model-stage{background:radial-gradient(ellipse at 50% 50%,#4a9cbd20,transparent 67%)}
+.product-focus .magic-toolbar,.product-focus .magic-cockpit,.product-focus .magic-status,.product-focus .depth-rail{visibility:hidden!important;pointer-events:none!important;opacity:0!important}
+.system-scroll-stage .model-code{bottom:25px}
+.system-scroll-stage .model-hint{bottom:8px}
+.system-scroll-stage .system-ribbon{top:auto;bottom:21px;left:-4%;right:-4%;opacity:.55;z-index:3}
+#system .feature-tabs{margin-top:45px}
+@media(max-width:600px){
+ .system-scroll-track{height:360svh}
+ .system-scroll-stage{padding-top:95px}
+ .system-scroll-stage .system-title{margin-top:22px}
+ .system-scroll-stage .system-title h2{font-size:11vw}
+ .system-scroll-stage .system-title .body-copy{margin-top:14px;font-size:12px}
+ .system-scroll-stage .model-stage{margin-bottom:70px}
+ .system-scroll-stage .system-ribbon{left:-8%;right:-8%;bottom:30px}
+}
+@media(prefers-reduced-motion:reduce){
+ .system-scroll-track{height:auto}.system-scroll-stage{position:relative;top:0}
+ .system-scroll-stage .system-ribbon{display:block}.system-ribbon .journey-ribbon-track{transform:none!important;will-change:auto}
+}

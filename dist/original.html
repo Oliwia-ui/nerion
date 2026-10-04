@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#040806" />
+    <meta name="description" content="Nerion — the descent protocol." />
+    <title>Nerion — The Descent Protocol</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23b9ff39' d='M8 27C15 12 49 12 56 27v14C49 56 15 56 8 41z'/%3E%3Cpath fill='%23040806' d='M15 30c9-7 25-7 34 0v7c-9 7-25 7-34 0z'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://pikaso.cdnpk.net" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="override.css" />
+    <link rel="stylesheet" href="slow-transition.css" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
+  <body>
+    <main id="story">
+      <div class="hero-sequence">
+      <section class="hero panel" aria-label="Nerion dive mask introduction">
+        <img class="hero-image" src="https://pikaso.cdnpk.net/private/production/5612387276/render.png?token=exp=1791072000~hmac=ad8321a5a2f5ba3b9f7719f7f100d9a183dc6113f948b5de7d6687cf048cc06d" alt="Deep ocean background" />
+        <img class="mask-png" src="https://pikaso.cdnpk.net/private/production/5612380186/render.png?token=exp=1791072000~hmac=caf402c413a153f8e049a0bb5bbb301f97b100c3cd5535f1c5d8228c49bf501a" alt="Nerion mask floating underwater" />
+        <img class="second-image" src="https://pikaso.cdnpk.net/private/production/5612361618/render.png?token=exp=1791072000~hmac=073b9314d27d9638a9f5b13257f2271b5bb8d515f3c30cd746bbd15fee0b8fae" alt="Nerion mask in a left-side underwater profile" />
+        <model-viewer id="hero-model" class="hero-model" src="https://pikaso.cdnpk.net/private/production/5611346718/model.glb?token=exp=1791072000~hmac=b9bb3d2bf44f610f79d3e3d0b253619149caa80fe10b8f69e630f09790385eb8" alt="3D Nerion dive mask" exposure="1.15" shadow-intensity="1.4" interaction-prompt="none"></model-viewer>
+        <div class="noise"></div>
+        <div class="hologram"><span>NERION / MATERIALISING</span><i></i><i></i><i></i></div>
+        <div class="hero-info" aria-label="Nerion mask features">
+          <article class="info-card a"><span>01</span><b>Adaptive optic</b><p>Low-distortion view</p></article>
+          <article class="info-card b"><span>02</span><b>Environmental array</b><p>Live current mapping</p></article>
+          <article class="info-card c"><span>03</span><b>HUD projector</b><p>Depth, air, heading</p></article>
+        </div>
+        <p class="shot-label">FIELD VIEW / LEFT PROFILE</p>
+        <nav><a class="wordmark" href="#story">NERION<span>®</span></a><p>01 / 04 — Descend</p><button id="sound" aria-pressed="false">Sound off</button></nav>
+        <div class="hero-copy"><p class="eyebrow">The descent protocol</p><h1>See past<br />the surface.</h1><p class="lead">An AI dive mask designed for the moment the ocean stops being familiar.</p></div>
+        <p class="scroll-cue">Scroll to descend <i></i></p>
+        <div class="depth-line"><span>0m</span><b></b><span id="depth-readout">0.0m</span></div>
+      </section>
+      </div>
+
+      <section class="equip panel" aria-label="Dive preparation">
+        <img class="diver-image" src="https://pikaso.cdnpk.net/private/production/5612139223/render.png?token=exp=1791072000~hmac=b82180cafdf34b993750eb72d68b4b54d9e7b86c370820d63d8144c55e295dbf" alt="A diver wearing Nerion mask and full scuba equipment underwater" />
+        <div class="scene-grid"></div>
+        <div class="scene-copy"><p class="eyebrow">01 — Prepare</p><h2>Every signal.<br />Before the water.</h2><p>Nerion reads the dive before you leave the surface: gear state, air source, route and your environment.</p></div>
+        <div class="checklist" aria-label="Equipment checklist"><span>BCD / LINKED</span><span>REGULATOR / SECURE</span><span>COMPUTER / SYNCED</span><span>NERION / ARMED</span></div>
+      </section>
+
+      <section class="descent panel" aria-label="Descent sequence">
+        <p class="giant-depth" aria-hidden="true">20<span>m</span></p>
+        <div class="scene-copy right"><p class="eyebrow">02 — Descend</p><h2>Pressure becomes<br />information.</h2><p>Real-time depth, nitrogen loading, ascent time and navigation stay quietly in your field of view.</p></div>
+        <div class="data-stream"><span>DEPTH</span><b>20.4</b><span>METRES</span><span>HEADING</span><b>146°</b><span>SOUTH EAST</span></div>
+      </section>
+
+      <section class="lab panel" aria-label="Explore the Nerion mask">
+        <div class="lab-copy"><p class="eyebrow">03 — Touch the system</p><h2>Built to be<br />explored.</h2><p>Drag the mask. Select a signal node. Every surface is designed for zero distraction at depth.</p></div>
+        <div id="mask-stage" class="mask-stage" tabindex="0" role="application" aria-label="Interactive model of the Nerion dive mask. Drag to rotate. Use the signal nodes to view component details.">
+          <model-viewer id="mask-object" class="mask-object" src="https://pikaso.cdnpk.net/private/production/5611346718/model.glb?token=exp=1791072000~hmac=b9bb3d2bf44f610f79d3e3d0b253619149caa80fe10b8f69e630f09790385eb8" alt="3D model of the Nerion dive mask" camera-controls auto-rotate auto-rotate-delay="1500" rotation-per-second="8deg" exposure="1.05" shadow-intensity="1.2" interaction-prompt="none"></model-viewer>
+          <button class="node node-a" data-title="Adaptive optic" data-copy="A curved, low-distortion lens compensates for underwater refraction in real time."><i></i>01</button>
+          <button class="node node-b" data-title="Ambient array" data-copy="Environmental sensors create a live spatial reading of current, visibility and depth."><i></i>02</button>
+          <button class="node node-c" data-title="HUD projector" data-copy="A near-invisible green display stays clear when you need it and silent when you do not."><i></i>03</button>
+          <div id="node-detail" class="node-detail" aria-live="polite"><span>SELECT A NODE</span><h3>Technical calm.</h3><p>Explore the architecture of the mask.</p></div>
+        </div>
+      </section>
+
+      <section class="hud panel" aria-label="Nerion underwater interface">
+        <div class="hud-glow"></div>
+        <div class="hud-frame"><p>NERION / LIVE</p><div class="hud-main"><b id="hud-depth">31.6</b><span>METRES</span></div><div class="hud-details"><span><i>01</i> NO DECO<br /><b>18 MIN</b></span><span><i>02</i> AIR<br /><b>148 BAR</b></span><span><i>03</i> TEMP<br /><b>18.4°</b></span></div><div class="compass">S&nbsp;&nbsp; <b>142°</b> &nbsp;&nbsp;SE</div></div>
+        <div class="scene-copy hud-copy"><p class="eyebrow">04 — Become the diver</p><h2>Nothing between<br />you and deep.</h2><p>Quiet confidence, carried inside the mask.</p><a class="cta" href="#story">Return to surface</a></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+    <script src="movement.js"></script>
+    <script src="slow-transition.js"></script>
+  </body>
+</html>
