@@ -4,11 +4,11 @@ A cinematic product-design website for a scuba mask with an integrated dive-comp
 
 ## Status
 
-Local working prototype. **Not yet verified as submission-ready.** See [requirements and QA](docs/requirements-audit.md) for known gaps. The user confirmed that the assignment requires **at least four scenes**; the six opening scenes satisfy the scene-count requirement. The older Abyss Kit equipment sequence is a proposal, not the mandatory subject.
+Published review build. **Not yet verified against every submission requirement.** See [submission guide](SUBMISSION.md) and [requirements and QA](docs/requirements-audit.md) for known gaps. The user confirmed that the assignment requires **at least four scenes**; the six opening scenes satisfy the scene-count requirement. The older Abyss Kit equipment sequence is a proposal, not the mandatory subject.
 
 Repository: [Oliwia-ui/nerion](https://github.com/Oliwia-ui/nerion) — private. Initial source snapshot prepared on 2026-10-04; this does not claim historical incremental commits.
 
-Live website URL: **Pending publication and verification.** `http://127.0.0.1:4173/` is a local preview, not a public submission URL. Website deployment remains a separate step. The raw originals remain outside this repository; the served media is included.
+Live website: [Nerion — The Descent Protocol](https://nerion-descent-protocol.msv8xyw9qs.chatgpt.site). Publication succeeded on 2026-10-05, serving source commit `47ed3473ae049975d14e03335e417ee48c1b4ae6`. **Access remains owner-private:** grant assessor access or explicitly authorise public sharing before submission. Publication status is verified by the hosting service; an assessor-access check is still outstanding. `http://127.0.0.1:4173/` is only a local preview. The raw originals remain outside this repository; the served media is included.
 
 ## Run locally
 
@@ -74,4 +74,4 @@ This only reads the served videos and writes derived inspection images into `doc
 
 ## Before submission
 
-Resolve the documented transition and accessibility gaps, attach generation evidence, perform the remaining browser/device tests, then upload the local improvements to the existing repository and publish when authorised. Update the live URL above only after verifying a public deployment from a clean browser session.
+The latest site, research and submission documentation have been uploaded to GitHub. Before sending, arrange assessor access, resolve or disclose the documented transition and accessibility gaps, attach generation evidence and perform the remaining browser/device tests. See [the submission checklist](SUBMISSION.md).

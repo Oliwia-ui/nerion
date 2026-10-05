@@ -1,5 +1,9 @@
 # Requirements and QA — 2026-10-04
 
+## Publication follow-up — 2026-10-05
+
+The phone, continuity and research changes were pushed to the existing private GitHub repository as commit `47ed347`. The hosting service confirmed successful publication of that same source at https://nerion-descent-protocol.msv8xyw9qs.chatgpt.site. Website access remains owner-private; assessor access must be arranged before submission. All 13 automated tests passed again. README and SUBMISSION.md contain the release links and outstanding limitations. The dated historical findings below are retained for transparency; publication does not establish frame-matched continuity, generation provenance or complete device/accessibility verification.
+
 ## Continuity and research follow-up — 2026-10-05
 
 Added source-linked `design-research.md` covering the supplied scroll-world workflow and four first-party interactive references. Observation limits are explicit. Broader joins, longer reading holds, shared seam lighting and restrained desktop motion now improve the existing montage; all 13 tests pass. Source-frame mismatches remain, so continuous frame-matched camera production is still not claimed. GitHub now exists as a private repository with one initial commit; phone and transition follow-ups are local, not pushed. The older table below records the initial audit and is superseded by these dated follow-ups.
