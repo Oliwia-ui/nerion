@@ -4,7 +4,7 @@ Timing revision 2026-10-05: current scene lengths are `[5, 3.2, 4.6, 4.6, 4.6, 5
 
 ## Provenance
 
-The user confirmed the supplied generated media was made in Magnific. This is **user-reported provenance**. No generation history export or prompt/model metadata for the six current films was located in the inspected folders. Generic `Lavf` encoder tags do not identify an AI model. Exact model versions, seeds, generation IDs, credits and original prompts remain unverified.
+On 2026-10-05, read-only Magnific MCP history searches recovered completed records for all six opening films: original prompts, creation IDs, dates, Seedance `pro-2.5` settings and recorded credits. See [recovered production evidence](magnific-evidence.md). All six local raw MOV byte sizes match the corresponding original sizes reported by Magnific. This supports the mapping but is not a cryptographic identity check. Seeds and attached input references remain unverified.
 
 Magnific MCP account/catalog access was verified earlier in this task. That read-only check does not establish that the existing films were generated through MCP rather than Magnific's web interface. No paid generation was performed during this audit.
 
@@ -48,6 +48,6 @@ Only nearby videos are fetched, as blobs, avoiding dependence on HTTP range supp
 
 ## Evidence still needed
 
-For each current film, provide available Magnific project/creation ID, prompt, exact model/version, duration/resolution settings, reference images or keyframes, date and any cost/approval record. If unavailable, mark it unavailable—never invent retrospective generation logs. The older `docs/video-production.md` in the supplied Vite folder describes a night shipwreck story and cannot serve as the production record of these current films.
+Creation IDs, prompts, model/mode, duration/resolution, dates and recorded costs are now recovered in `magnific-evidence.md`. Attached input references, seeds, original MCP invocation and approval records still need evidence. If unavailable, mark them unavailable—never invent retrospective generation logs. The older `docs/video-production.md` in the supplied Vite folder describes a night shipwreck story and cannot serve as the production record of these current films.
 
 The required proof transition must be documented as a new validation if no historical approval exists. Merely renaming files or importing them into Magnific does not establish an MCP-generation workflow.

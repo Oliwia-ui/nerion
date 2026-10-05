@@ -1,5 +1,13 @@
 # Requirements and QA — 2026-10-04
 
+## Evidence recovery and interaction checks — 2026-10-05
+
+Recovered six matching completed Magnific creation records through read-only MCP: prompts, IDs, dates, Seedance `pro-2.5` settings and credits. All six reported original byte sizes match local raw MOVs. See `magnific-evidence.md`; this supersedes earlier claims that settings/prompts are unavailable. It does not establish historical MCP generation or attached start/end frames.
+
+Local in-app-browser checks: product navigation worked; Right arrow selected the Dive computer tab, changed its panel and moved focus; Enter visor opened the labelled modal with focus on Exit visor; Escape closed it and returned focus to Enter visor. Captured error log was empty. A requested 390×844 override reported an actual 300×649 CSS viewport: no document horizontal overflow and product buttons approximately 44px high, but the screenshot showed tight/cropped composition. This is not a successful 390×844 device test. Override was reset. Physical iOS/Android testing and the exact target-size matrix remain open.
+
+Public-sharing choice and approval for new credit-consuming transition production have been requested. No visibility change or new paid generation has occurred.
+
 ## Publication follow-up — 2026-10-05
 
 The phone, continuity and research changes were pushed to the existing private GitHub repository as commit `47ed347`. The hosting service confirmed successful publication of that same source at https://nerion-descent-protocol.msv8xyw9qs.chatgpt.site. Website access remains owner-private; assessor access must be arranged before submission. All 13 automated tests passed again. README and SUBMISSION.md contain the release links and outstanding limitations. The dated historical findings below are retained for transparency; publication does not establish frame-matched continuity, generation provenance or complete device/accessibility verification.

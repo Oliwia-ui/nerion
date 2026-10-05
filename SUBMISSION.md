@@ -15,13 +15,13 @@ The verified hosted URL and access status are recorded in README.md. Do not subm
 
 ## Honest limitations to disclose
 
-The films are connected by improved editorial dissolves and waterlight, not verified frame-matched connector footage. The original Magnific generation settings and MCP job evidence are not yet available. A historical pre-production transition approval is not documented. Physical-phone, contrast, full reduced-motion and failure-mode browser certification remain incomplete. The repository begins with a source snapshot rather than a reconstructed historical commit sequence.
+The films are connected by improved editorial dissolves and waterlight, not verified frame-matched connector footage. Magnific prompts, creation IDs, dates, model settings and recorded costs have now been recovered in `docs/magnific-evidence.md`; evidence of original MCP generation calls and attached reference frames remains unavailable. A historical pre-production transition approval is not documented. Physical-phone, contrast, full reduced-motion and failure-mode browser certification remain incomplete. The repository begins with a source snapshot rather than a reconstructed historical commit sequence.
 
 ## Before sending to the assessor
 
 1. Verify the assessor can access both the private repository and hosted website; arrange access or authorise public visibility.
 2. Check the deployed experience on a real phone and desktop.
-3. Attach any available Magnific prompts/settings/history.
+3. Include the recovered Magnific evidence; attach original MCP invocation/reference-frame records if available.
 4. Resolve the frame-matched continuity requirement, or obtain acceptance of the documented editorial approach.
 
 These outstanding items mean this package is prepared for review, not certified as satisfying every assignment requirement.

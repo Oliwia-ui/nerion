@@ -50,6 +50,7 @@ Legacy modules remain because existing observers and enhancements still depend o
 - [Current storyboard](docs/storyboard.md)
 - [Design research: workflow and four interactive references](docs/design-research.md)
 - [Asset inventory and Magnific provenance](docs/media-workflow.md)
+- [Recovered Magnific prompts, model settings and creation records](docs/magnific-evidence.md)
 - [Transition inspection with frame pairs](docs/transition-audit.md)
 - [Requirements and QA findings](docs/requirements-audit.md)
 - `NERION_HANDOFF.md` contains historical decisions; the focused docs above supersede outdated assertions about current assets or completion.
