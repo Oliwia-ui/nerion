@@ -3,13 +3,21 @@
 (() => {
   const clamp=n=>Math.max(0,Math.min(1,n));
   const smooth=n=>{n=clamp(n);return n*n*(3-2*n);};
-  const lengths=[5,2.6,4,4,4,4.8],overlap=.9;
+  // Broader joins with longer scene holds: the dissolve does not steal reading time.
+  const lengths=[5,3.2,4.6,4.6,4.6,5.4],overlap=1.15;
   let cursor=0;
   const segments=lengths.map((length,index)=>{
     const start=cursor;cursor+=length-(index<lengths.length-1?overlap:0);
     return {start,end:start+length,length};
   });
   const total=cursor;
+  function seam(position){
+    for(let i=1;i<segments.length;i++){
+      const t=(position-segments[i].start)/overlap;
+      if(t>0&&t<1)return Math.sin(Math.PI*t)**2;
+    }
+    return 0;
+  }
   function sample(position){
     const p=Math.max(0,Math.min(total,position));
     return segments.map((s,i)=>{
@@ -37,7 +45,7 @@
     if(scene===5)y=12*away;
     return {opacity:enter*leave,transform:`translate3d(${x}px,${y}px,0) rotate(${rotate}deg) scale(${scale})`};
   }
-  const api={clamp,smooth,segments,total,overlap,sample,letterPose};
+  const api={clamp,smooth,segments,total,overlap,sample,letterPose,seam};
   if(typeof module!=='undefined')module.exports=api;
   else window.NerionJourneyTimeline=api;
 })();

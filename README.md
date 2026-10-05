@@ -48,6 +48,7 @@ Legacy modules remain because existing observers and enhancements still depend o
 ## Story and production evidence
 
 - [Current storyboard](docs/storyboard.md)
+- [Design research: workflow and four interactive references](docs/design-research.md)
 - [Asset inventory and Magnific provenance](docs/media-workflow.md)
 - [Transition inspection with frame pairs](docs/transition-audit.md)
 - [Requirements and QA findings](docs/requirements-audit.md)
@@ -61,7 +62,7 @@ Requires Node.js with its built-in test runner:
 node --test *.test.cjs
 ```
 
-Twelve tests passed on 2026-10-04. They cover timeline math, overlapping opacity, seeking backpressure, failed-media poster retention, some reduced-motion behavior and scroll-loop gating. They are **not** proof of frame-matched cinematography, full accessibility or real-device performance.
+Thirteen tests passed on 2026-10-05. They cover timeline math, overlapping opacity, reversible seam lighting, seeking backpressure, failed-media poster retention, some reduced-motion behavior and scroll-loop gating. They are **not** proof of frame-matched cinematography, full accessibility or real-device performance.
 
 To regenerate visual boundary evidence, install ffmpeg and run:
 
@@ -73,4 +74,4 @@ This only reads the served videos and writes derived inspection images into `doc
 
 ## Before submission
 
-Resolve the documented transition and accessibility gaps, attach generation evidence, perform the remaining browser/device tests, then create the requested repository and publish when authorised. Update the live URL above only after verifying a public deployment from a clean browser session.
+Resolve the documented transition and accessibility gaps, attach generation evidence, perform the remaining browser/device tests, then upload the local improvements to the existing repository and publish when authorised. Update the live URL above only after verifying a public deployment from a clean browser session.

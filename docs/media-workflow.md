@@ -1,5 +1,7 @@
 # Media inventory and Magnific workflow
 
+Timing revision 2026-10-05: current scene lengths are `[5, 3.2, 4.6, 4.6, 4.6, 5.4]`, overlap `1.15`, total `21.65` viewport units. These replace the earlier timing figures in the historical implementation description below. Media originals and generation provenance are unchanged.
+
 ## Provenance
 
 The user confirmed the supplied generated media was made in Magnific. This is **user-reported provenance**. No generation history export or prompt/model metadata for the six current films was located in the inspected folders. Generic `Lavf` encoder tags do not identify an AI model. Exact model versions, seeds, generation IDs, credits and original prompts remain unverified.

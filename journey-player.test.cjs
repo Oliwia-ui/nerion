@@ -36,10 +36,11 @@ test('player loads nearby clips only and coalesces forward/reverse seeks without
   assert.equal(p.requests.length,1);
   p.videos[0].events.loadeddata();p.settle();
   p.scroll(3);assert(p.requests.some(s=>s.includes('ripple')));
-  p.scroll(8);await new Promise(resolve=>setImmediate(resolve));
+  const diverMid=timeline.segments[2].start+timeline.segments[2].length*.7;
+  p.scroll(diverMid);await new Promise(resolve=>setImmediate(resolve));
   p.videos.forEach(v=>v.events.loadeddata?.());p.settle();
   const diver=p.videos[2];assert(diver.currentTime>4);
-  diver.seeking=true;const before=diver.currentTime;p.scroll(7);assert.equal(diver.currentTime,before);
+  diver.seeking=true;const before=diver.currentTime;p.scroll(diverMid-.8);assert.equal(diver.currentTime,before);
   diver.seeking=false;diver.events.seeked();assert(diver.currentTime<before);
   assert(!p.requests.some(s=>s.includes('light')),'Do not preload distant finale');
   p.scroll(timeline.total-.5);await new Promise(resolve=>setImmediate(resolve));

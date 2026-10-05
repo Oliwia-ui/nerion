@@ -45,7 +45,8 @@
   top.append(brand,label);
   const bottom=el('div','journey-bottom micro'),hint=el('span','','SCROLL TO DESCEND ↓'),skip=el('a','','EXPLORE THE SYSTEM ↗');skip.href='#system';bottom.append(hint,skip);
   const track=el('div','journey-progress'),fill=el('i','');track.setAttribute('aria-hidden','true');track.append(fill);
-  stage.append(top,bottom,track);
+  const waterlight=el('div','journey-waterlight');waterlight.setAttribute('aria-hidden','true');
+  stage.append(waterlight,top,bottom,track);
   section.style.setProperty('--journey-height',`${(T.total+1)*100}svh`);
   // Real anchors retain existing navigation and shared links without hidden destinations.
   [['vision',1],['drift',2]].forEach(([id,index])=>{
@@ -90,7 +91,11 @@
       s.layer.style.opacity=state.opacity;
       s.layer.style.visibility=s.visible?'visible':'hidden';
       s.layer.style.filter=`grayscale(${state.gray})`;
+      // A restrained shared forward drift carries the eye through each dissolve.
+      const drift=coarse?'none':`scale(${1+state.local*.035})`;
+      s.poster.style.transform=drift;s.video.style.transform=drift;
       s.copy.setAttribute('aria-hidden',String(state.copy<.05));
+      s.copy.style.opacity=state.copy;
       s.pre.style.opacity=state.copy;
       s.copy.style.color=i===0?`rgb(${238-64*(1-state.gray)} ${238-14*(1-state.gray)} 238)`:definitions[i][4];
       s.letters.forEach((letter,j)=>{
@@ -101,6 +106,7 @@
       s.target=state.time*Math.max(0,(s.video.duration||0)-.05);seek(s);
     });
     const sceneLabel=`0${current+1} / ${scenes[current].label}`;
+    waterlight.style.opacity=reduce?0:T.seam(position)*.26;
     if(label.textContent!==sceneLabel)label.textContent=sceneLabel;
     const blue=T.smooth((position-1.6)/5);
     stage.style.setProperty('--journey-blue',blue*.13);

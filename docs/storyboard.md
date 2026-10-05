@@ -2,6 +2,8 @@
 
 Documented 2026-10-04 from the current website, not a record of an approved pre-production storyboard. Six opening scenes are retained because the user clarified the minimum is four.
 
+Timing update 2026-10-05: the current ranges supersede the original table below: awakening 0–5, ripple 3.85–7.05, diver 5.9–10.5, reef 9.35–13.95, manta 12.8–17.4, light 16.25–21.65. Joins now overlap by 1.15 viewport heights with soft waterlight and a shared gentle forward drift on fine-pointer devices. Scene order, footage and copy are unchanged.
+
 ## Direction
 
 - **Product:** a scuba mask with an integrated dive-computer display.

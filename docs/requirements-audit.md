@@ -1,5 +1,13 @@
 # Requirements and QA — 2026-10-04
 
+## Continuity and research follow-up — 2026-10-05
+
+Added source-linked `design-research.md` covering the supplied scroll-world workflow and four first-party interactive references. Observation limits are explicit. Broader joins, longer reading holds, shared seam lighting and restrained desktop motion now improve the existing montage; all 13 tests pass. Source-frame mismatches remain, so continuous frame-matched camera production is still not claimed. GitHub now exists as a private repository with one initial commit; phone and transition follow-ups are local, not pushed. The older table below records the initial audit and is superseded by these dated follow-ups.
+
+## Phone follow-up — 2026-10-05
+
+Added `dist/mobile.css`: phone product stage uses reserved grid rows, 44px product controls, larger supporting copy, 48px feature tabs, safe-area spacing, and hidden sound control during product chapters to prevent overlap. Visor controls/readouts and finale text have larger phone sizes. Short viewports retain scroll access to taller stages. The cipher is now hidden for reduced motion so it cannot cover the static story. Desktop rules remain unchanged. Narrow browser preview and visor open/close checked; product controls measured approximately 44px and no horizontal document overflow at the observed 491×906 viewport. Requested smaller viewport preview also inspected, but exact-device certification is still pending because browser viewport overrides previously differed from effective sizes. All 12 automated tests pass. Changes are local, not pushed or deployed in this follow-up. The historical findings below describe the pre-fix audit; full physical-phone, contrast and reduced-motion browser QA remain outstanding.
+
 ## Basis
 
 Compared current working `dist/` against the supplied `i-n/assignment-brief.md`, with the earlier A2 Abyss Kit document as additional guidance, not a compulsory equipment storyline. The user clarified **at least four** scenes. This is an audit, not an assertion of teacher approval or a complete WCAG certification.

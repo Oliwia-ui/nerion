@@ -1,5 +1,9 @@
 # Opening transition audit — 2026-10-04
 
+## Playback improvement — 2026-10-05
+
+Existing footage retained. Opening joins now span 1.15 viewport heights rather than 0.9; later scene lengths increase to preserve reading holds, giving 21.65 viewport-height timeline units. A reversible, softly graded waterlight overlay reaches at most 26% opacity during joins, with no opaque blackout, and fine-pointer screens use a restrained 3.5% forward media drift. Chapter text fades as a whole as well as per-letter to reduce stray lettering across scene changes. No extra media/decoder layers are added. Thirteen tests pass, including new seam symmetry/endpoint tests. First mask/ripple join inspected in-browser with outgoing opacity 1, incoming approximately .34 and waterlight approximately .23. This is a smoother editorial transition, **not a repair of the source geometry differences documented below**. No generation credits spent.
+
 ## Method and limits
 
 `audit-media.sh` extracts a near-final frame (approximately 0.1 seconds before EOF) and the first decoded frame of the next served clip. The left image is outgoing; the right is incoming. These contact sheets assess composition and source continuity, not every frame in each browser dissolve. They are **not exact final-frame exports suitable for conditioning a new generation**. Extract the actual final frame separately before production.

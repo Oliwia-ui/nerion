@@ -1,6 +1,14 @@
 const assert=require('node:assert/strict');
 const test=require('node:test');
 const T=require('./dist/journey-timeline.js');
+test('waterlight bridges are bounded, symmetric and vanish at both ends of each join',()=>{
+  T.segments.slice(1).forEach(s=>{
+    assert.equal(T.seam(s.start),0);
+    assert(Math.abs(T.seam(s.start+T.overlap))<1e-12);
+    assert(Math.abs(T.seam(s.start+T.overlap/2)-1)<1e-12);
+    assert(Math.abs(T.seam(s.start+T.overlap*.2)-T.seam(s.start+T.overlap*.8))<1e-12);
+  });
+});
 test('six distinct text entrances settle into an identical readable pose',()=>{
   const entrances=new Set();
   for(let scene=0;scene<6;scene++){
