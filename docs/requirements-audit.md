@@ -1,5 +1,9 @@
 # Requirements and QA — 2026-10-04
 
+## Public access and one MCP test — 2026-10-05
+
+Website access changed to public following explicit owner approval; GitHub remains private. One approved 3,950-credit Seedance 2.5 connector was generated through Magnific MCP using rendered reef-end and manta-start keyframes. See `transition-test.md` for its settings and review. Automated video analysis found a significant second-boundary mismatch, so it was not integrated. This supplies genuine new MCP generation evidence but does not resolve continuity or retroactively prove the original production sequence.
+
 ## Evidence recovery and interaction checks — 2026-10-05
 
 Recovered six matching completed Magnific creation records through read-only MCP: prompts, IDs, dates, Seedance `pro-2.5` settings and credits. All six reported original byte sizes match local raw MOVs. See `magnific-evidence.md`; this supersedes earlier claims that settings/prompts are unavailable. It does not establish historical MCP generation or attached start/end frames.

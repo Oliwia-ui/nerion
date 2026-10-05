@@ -8,7 +8,7 @@ Published review build. **Not yet verified against every submission requirement.
 
 Repository: [Oliwia-ui/nerion](https://github.com/Oliwia-ui/nerion) — private. Initial source snapshot prepared on 2026-10-04; this does not claim historical incremental commits.
 
-Live website: [Nerion — The Descent Protocol](https://nerion-descent-protocol.msv8xyw9qs.chatgpt.site). Publication succeeded on 2026-10-05, serving source commit `47ed3473ae049975d14e03335e417ee48c1b4ae6`. **Access remains owner-private:** grant assessor access or explicitly authorise public sharing before submission. Publication status is verified by the hosting service; an assessor-access check is still outstanding. `http://127.0.0.1:4173/` is only a local preview. The raw originals remain outside this repository; the served media is included.
+Live website: [Nerion — The Descent Protocol](https://nerion-descent-protocol.msv8xyw9qs.chatgpt.site). Publication succeeded on 2026-10-05, serving source commit `47ed3473ae049975d14e03335e417ee48c1b4ae6`. **Website access is public**, confirmed by the hosting service after the owner's explicit approval on 2026-10-05. GitHub remains private and needs separate assessor access. `http://127.0.0.1:4173/` is only a local preview. The raw originals remain outside this repository; the served media is included.
 
 ## Run locally
 

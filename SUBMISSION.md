@@ -19,7 +19,7 @@ The films are connected by improved editorial dissolves and waterlight, not veri
 
 ## Before sending to the assessor
 
-1. Verify the assessor can access both the private repository and hosted website; arrange access or authorise public visibility.
+1. Share the public hosted website and grant the assessor access to the still-private GitHub repository.
 2. Check the deployed experience on a real phone and desktop.
 3. Include the recovered Magnific evidence; attach original MCP invocation/reference-frame records if available.
 4. Resolve the frame-matched continuity requirement, or obtain acceptance of the documented editorial approach.
